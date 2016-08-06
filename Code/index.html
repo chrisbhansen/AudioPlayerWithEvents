@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="X-UA-Compatible content="IE-edge" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<link rel="stylesheet" type="text/css" media="screen" href="assets/css/audioplayer.css" />
+	<script type="text/javascript" src="assets/js/libs/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="assets/js/audioplayer.js"></script>
+
+	<title>Audio Player</title>
+
+</head>
+<body>
+	<audio id="MyAudio" preload="auto" style="width:480px;">
+		<source src="assets/audio/muzak.mp3" type="audio/mp3" />
+		<p>Your browser does not support HTML5 audio.</p>
+	</audio>
+
+	<div id="AudioControls">
+		<div id="PlayToggle" class="playerButton">Play</div>
+		<div id="Progress">
+			<div id="LoadProgress"></div>
+			<div id="LoadProgressText"></div>
+			<div id="PlayProgress"></div>
+		</div>	
+		<div id="AudioTime">
+			<span id="CurrentTime">00:00</span>
+			<span id="Duration">00:00</span>
+		</div>
+		<div id="VolumeDiv">
+			<span id="VolumeText">Volume</span>
+			<input type="range" id="volume-bar" min="0" max="100" value="50" class="vVertical" />
+		</div>
+	</div>
+	<br />
+	<div id="OtherControls">
+		<div id="RewindButton">Rewind</div>
+		<div id="SetTimeButton">Go To :30</div>
+		<div id="EnterEventButton">Save This Event -></div>
+		<input id="inputField" type="text" name="audioEvent" />
+	</div>
+	<br />
+	<div id="EventDisplay">
+		<div id="ReceivedData"></div>
+	</div>
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,217 @@
+#AudioControls {
+	width: 560px;
+	height: 30px;
+	background-color: #333;
+	color: #fff;
+	font-family: Verdana, sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+#AudioControls div {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+}
+
+.playerButton {
+	width: 50px;
+	text-align: center;
+	cursor: pointer;
+}
+
+#Progress {
+	position: relative;
+	background: #555;
+	width: 310px;
+	cursor: pointer;
+}
+
+#PlayProgress {
+	position: absolute;
+	background: #6C3;
+}
+
+#LoadProgress {
+	position: absolute;
+	background: #69C;
+}
+
+#LoadProgressText {
+	position: absolute;
+	width: 310px;
+	text-align: center;
+}
+
+#AudioTime {
+	width: 120px;
+	text-align: center;
+}
+
+#VolumeDiv {
+	width: 80px;
+	text-align: center;
+	cursor: pointer;
+}
+
+#OtherControls div {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+}
+
+#SetTimeButton, #RewindButton {
+	width: 100px;
+	height: 30px;
+	background-color: #333;
+	color: #fff;
+	font-family: Verdana, sans-serif;
+	font-size: 12px;
+	text-align: center;
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+#EnterEventButton {
+	background-color: #333;
+	color: #fff;
+	font-family: Verdana, sans-serif;
+	font-size: 12px;
+	padding: 0 10px;
+	text-align: center;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+#inputField {
+	height: 24px;
+	width: 135px;
+}
+
+#EventDisplay div {
+	float: left;
+	height: 30px;
+	line-height: 30px
+}
+
+input[type=range].vVertical {
+	-webkit-appearance: none;
+	width: 80px;
+	height: 18px;
+	margin-top: 11px;
+	-webkit-transform:rotate(-90deg);
+	-moz-transform:rotate(-90deg);
+	-o-transform:rotate(-90deg);
+	-ms-transform:rotate(-90deg);
+	transform:rotate(-90deg);
+	z-index: 0;
+}
+
+/*Chrome Styles*/
+input[type=range]::-webkit-slider-runnable-track {
+	width: 80px;
+	height: 5px;
+	background: #ddd;
+	border: none;
+	border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	border: none;
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;
+	background: #555;
+	margin-top: -3px;
+	cursor: pointer;
+}
+
+input[type=range]:focus {
+	outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+	background: #ccc;
+}
+
+/*Firefox Styles*/
+input[type=range]::-moz-range-track {
+	width: 80px;
+	height: 5px;
+	background: #ddd;
+	border: none;
+	border-radius: 3px;
+}
+
+input[type=range]::-moz-range-thumb {
+	border: none;
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;
+	background: #555;
+	cursor: pointer;
+}
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring {
+	outline: 1px solid white;
+	outline-offset: -1px;
+}
+
+input[type=range]:focus::-moz-range-track {
+	background: #ccc;
+}
+
+/*IE Styles*/
+input[type=range]::-ms-track {
+	width: 80px;
+	height: 18px;
+
+	/*remove bg color from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+	background: transparent;
+
+	/*leave room for the larger thumb to overflow with a transparent border */
+	border-color: transparent;
+	border-width: 6px;
+
+	/*remove default tick marks*/
+	color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+	background: #ccc;
+	border-radius: 18px;
+}
+
+input[type=range]::-ms-fill-upper {
+	background: #ddd;
+	border-radius: 18px;
+}
+
+input[type=range]::-ms-thumb {
+	border: none;
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;
+	background: #555;
+}
+
+
+input[type=range]::focus-ms-fill-lower {
+	background: #ddd;
+}
+
+input[type=range]::focus-ms-fill-upper {
+	background: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
